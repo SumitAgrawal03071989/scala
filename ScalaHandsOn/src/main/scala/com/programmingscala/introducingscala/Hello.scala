@@ -1,3 +1,5 @@
+package com.programmingscala.introducingscala
+
 object Hello extends App {
   if (args.size == 0)
     println("Hello, you")
