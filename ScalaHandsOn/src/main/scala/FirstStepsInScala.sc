@@ -1,11 +1,10 @@
-var greeting = "Hello, world!"
+class Person(x:Int,y:Int)
+val p = new Person(1,2);
 
-greeting = "Leave me alone, world!"
+val t = (99,1,'z',"Sumit",p);
 
-def max(x:Int, y:Int):Int = if(x>y) x else y
-max(1,3)
+var jetSet = Set("Boeing", "Airbus")
+jetSet += "Lear"
+println(jetSet.contains("Lear"))
 
-def great() = print("This is test")
-
-great()
-
+1 -> "test"
