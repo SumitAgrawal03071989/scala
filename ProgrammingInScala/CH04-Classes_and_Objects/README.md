@@ -67,7 +67,7 @@ z
 
 ## SINGLETON OBJECTS
 
-As mentioned in Chapter 1, one way in which Scala is more object-oriented than Java is that classes in ** Scala cannot have static members. ** Instead, Scala has singleton objects. A singleton object definition looks like a class definition, except instead of the keyword class you use the keyword object.
+As mentioned in Chapter 1, one way in which Scala is more object-oriented than Java is that classes in **Scala cannot have static members.** Instead, Scala has singleton objects. A singleton object definition looks like a class definition, except instead of the keyword class you use the keyword object.
 
 The singleton object in this figure is named ChecksumAccumulator, the same name as the class in the previous example. When a singleton object shares the same name with a class, it is called that class's companion object. You must define both the class and its companion object in the same source file.
 
