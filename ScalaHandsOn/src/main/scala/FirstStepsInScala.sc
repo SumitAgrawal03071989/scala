@@ -1,1 +1,0 @@
-val little = 3
