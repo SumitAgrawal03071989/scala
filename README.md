@@ -111,6 +111,80 @@ Continue and Break are not present in scala.
 
 ## FIRST-CLASS FUNCTIONS
 
+```
+* Scala has first-class functions. Not only can you define functions and call them, but you can write
+down functions as unnamed literals and then pass them around as values
+```
+
+
+
+
+# Control Abstraction
+```
+* Scala doesn't have many built-in control abstractions because it gives you the ability to create your own
+```
+
+## 9.1 REDUCING CODE DUPLICATION
+```
+Higher-Order function, function which takes function as argument, behaviour parameterization.
+
+```
+
+```
+SIMPLIFYING CLIENT CODE
+* if we want to check if a element exists in list of elements 
+* then with traditional imperative style programming 
+* we will initiate a loop and set a flag if condition matched.
+
+* With higher order function like exits, we can just pass the function with condition logic.
+* With exists, for example we have replaced the need of while loop contraol. 
+```
+
+loan pattern : 
+```
+1) in below code user does not control the close functionality for writer.
+2) withPrintWriter in the this example loans a PrintWriter to the function
+```
+
+```
+def withPrintWriter(file: File, op: PrintWriter => Unit) = {
+ 	val writer = new PrintWriter(file)
+	try {
+	 	op(writer)
+	} finally {
+	 	writer.close()
+	}
+ }
+
+
+ withPrintWriter(
+ 	new File("date.txt"),
+ 	writer => writer.println(new java.util.Date)
+ )
+```
+
+3) if a function accepts only one argument, then argument can be surrounded by {} braces.
+```
+*  This can make a method call feel more like a control abstraction
+
+withPrintWriter(file) { writer =>
+ 	writer.println(new java.util.Date)
+}
+
+```
+
+9.5 BY-NAME PARAMETERS
+TBD,
+
+
+
+# Scala's Hierarchy
+
+
+
+
+
+
 
 
 
